@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Meridian</title>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="ribbon">
+  <a class="brand" href="/"><span class="brand__mark">M</span><span class="brand__text">Meridian</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="/">About</a>
+    <a href="/platform">Platform</a>
+    <a href="/services">Services</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/contact" aria-current="page">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <header class="page-head">
+      <span class="eyebrow">Contact</span>
+      <h1>Send us a message.</h1>
+      <p class="lead">We reply within one working day.</p>
+    </header>
+
+    <section class="section">
+      <div class="split">
+        <form class="card form" method="post" action="/contact">
+          <label class="field">
+            <span class="field__label">Name</span>
+            <input class="field__control" name="name" required maxlength="100" autocomplete="name">
+          </label>
+          <label class="field">
+            <span class="field__label">E-mail</span>
+            <input class="field__control" type="email" name="email" required maxlength="200" autocomplete="email">
+          </label>
+          <label class="field">
+            <span class="field__label">Message</span>
+            <textarea class="field__control" name="message" required maxlength="5000"></textarea>
+          </label>
+          <!-- A bot fills this field. A person does not see it. -->
+          <label class="visually-hidden" aria-hidden="true">Website
+            <input name="website" tabindex="-1" autocomplete="off">
+          </label>
+          <button class="btn btn--primary" type="submit">Send message</button>
+        </form>
+
+        <div class="grid">
+          <div class="card"><span class="card__label">E-mail</span><p>hello@example.com</p></div>
+          <div class="card"><span class="card__label">Office hours</span><p>Monday to Friday, 08:00 to 17:00</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<nav class="pager" aria-label="Page sequence">
+  <a class="pager__link pager__link--prev" href="/pricing" rel="prev"><span class="pager__arrow" aria-hidden="true">&larr;</span><span class="pager__name">Pricing</span></a>
+</nav>
+
+<footer class="footer">
+  <span>© 2026 Meridian</span>
+  <nav class="footer__links" aria-label="Footer">
+    <a href="/about">History</a><a href="/pricing">Pricing</a><a href="/contact">Contact</a>
+  </nav>
+</footer>
+</body>
+</html>

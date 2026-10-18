@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platform — Meridian</title>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/tabs.js" defer></script>
+<script src="/js/roadmap.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="ribbon">
+  <a class="brand" href="/"><span class="brand__mark">M</span><span class="brand__text">Meridian</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="/">About</a>
+    <a href="/platform" aria-current="page">Platform</a>
+    <a href="/services">Services</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <header class="page-head">
+      <span class="eyebrow">Platform</span>
+      <h1>Visibility, Clarity and a Single Source of Truth</h1>
+      <p class="lead">Accounting, CRM and inventory share one database. A change in one place shows everywhere.</p>
+    </header>
+
+    <div class="tabs__list" role="tablist" aria-label="Platform" hidden>
+      <button class="tabs__tab" role="tab" id="tab-features" aria-controls="features" data-id="features">Features</button>
+      <button class="tabs__tab" role="tab" id="tab-roadmap" aria-controls="roadmap" data-id="roadmap">Roadmap</button>
+      <button class="tabs__tab" role="tab" id="tab-integrations" aria-controls="integrations" data-id="integrations">Integrations</button>
+    </div>
+
+    <section class="tabs__panel" id="features" role="tabpanel" aria-labelledby="tab-features">
+      <h2 class="visually-hidden">Features</h2>
+      <div class="accordions">
+        <div>
+          <details class="accordion">
+            <summary>Accounting <span class="card__label">5 features</span></summary>
+            <dl class="features">
+              <dt>General ledger</dt><dd>Journals and ledgers that update when each transaction is recorded.</dd>
+              <dt>Bills and invoices</dt><dd>Create, send and track bills and invoices from one screen.</dd>
+              <dt>Financial statements</dt><dd>Balance sheet, income statement and cash flow that are always up to date.</dd>
+              <dt>Multi-currency</dt><dd>Accounts and invoices in more than one currency.</dd>
+              <dt>Tax rates</dt><dd>Set the tax rates for each region. Tax is calculated on each line.</dd>
+            </dl>
+          </details>
+          <details class="accordion">
+            <summary>CRM <span class="card__label">3 features</span></summary>
+            <dl class="features">
+              <dt>Leads</dt><dd>Record each lead and move it through a clear sales cycle.</dd>
+              <dt>Customers</dt><dd>One record for each customer, with contacts, invoices and notes.</dd>
+              <dt>Activity history</dt><dd>See each call, e-mail and meeting with a customer.</dd>
+            </dl>
+          </details>
+          <details class="accordion">
+            <summary>Inventory <span class="card__label">3 features</span></summary>
+            <dl class="features">
+              <dt>Stock levels</dt><dd>Stock changes when a sale or a purchase is recorded. No manual counts.</dd>
+              <dt>Orders</dt><dd>Sales orders and purchase orders connect to stock and to the ledger.</dd>
+              <dt>Warehouses</dt><dd>Keep stock in more than one location.</dd>
+            </dl>
+          </details>
+          <details class="accordion">
+            <summary>Reports <span class="card__label">3 features</span></summary>
+            <dl class="features">
+              <dt>Dashboards</dt><dd>Cash, debtors and sales on one screen.</dd>
+              <dt>Export</dt><dd>Print or export each report.</dd>
+              <dt>Public notes</dt><dd>Comments and footnotes on each report.</dd>
+            </dl>
+          </details>
+        </div>
+        <div>
+          <details class="accordion">
+            <summary>Security <span class="card__label">2 features</span></summary>
+            <dl class="features">
+              <dt>Roles</dt><dd>Each user sees only what they need.</dd>
+              <dt>Audit log</dt><dd>Each change is recorded with the user and the time.</dd>
+            </dl>
+          </details>
+          <details class="accordion">
+            <summary>Access <span class="card__label">2 features</span></summary>
+            <dl class="features">
+              <dt>Any device</dt><dd>The interface works on a desktop, a tablet and a phone.</dd>
+              <dt>Single sign-on</dt><dd>Sign in with your company account.</dd>
+            </dl>
+          </details>
+          <details class="accordion">
+            <summary>Multi-Tenancy <span class="card__label">2 features</span></summary>
+            <dl class="features">
+              <dt>Multiple companies</dt><dd>One platform to manage many companies.</dd>
+              <dt>Full separation</dt><dd>The data of each company is kept separate.</dd>
+            </dl>
+          </details>
+        </div>
+      </div>
+
+      <div class="demo">
+        <div>
+          <h3>Try it yourself</h3>
+          <p>Open a live demo with sample data. You do not need an account.</p>
+        </div>
+        <a class="btn btn--primary" href="https://demo.example.com" target="_blank" rel="noopener">Open the live demo</a>
+      </div>
+    </section>
+
+    <section class="tabs__panel" id="roadmap" role="tabpanel" aria-labelledby="tab-roadmap">
+      <h2 class="visually-hidden">Roadmap</h2>
+      <!-- roadmap.js draws a graph from this list.
+           Add a module: a new div.roadmap__module. Add an item: a new li.
+           data-status: "done", "busy" or "planned". -->
+      <div class="roadmap">
+        <div class="roadmap__module">
+          <h3>Accounting</h3>
+          <ul>
+            <li data-status="done"><strong>Multi-currency</strong><span class="status status--ok">Released</span><p>Accounts and invoices in more than one currency.</p></li>
+            <li data-status="busy"><strong>Budgets</strong><span class="status status--busy">In progress</span><p>Set a budget and compare it with actual figures.</p></li>
+            <li data-status="planned"><strong>Fixed assets</strong><span class="status">Planned</span><p>Asset register and depreciation.</p></li>
+          </ul>
+        </div>
+        <div class="roadmap__module">
+          <h3>CRM</h3>
+          <ul>
+            <li data-status="busy"><strong>E-mail sync</strong><span class="status status--busy">In progress</span><p>Show e-mails on the customer record.</p></li>
+            <li data-status="planned"><strong>Quotes</strong><span class="status">Planned</span><p>Send a quote and turn it into an invoice.</p></li>
+          </ul>
+        </div>
+        <div class="roadmap__module">
+          <h3>Inventory</h3>
+          <ul>
+            <li data-status="planned"><strong>Barcodes</strong><span class="status">Planned</span><p>Scan items to receive and send stock.</p></li>
+          </ul>
+        </div>
+        <div class="roadmap__module">
+          <h3>Reports</h3>
+          <ul>
+            <li data-status="done"><strong>Public notes</strong><span class="status status--ok">Released</span><p>Comments and footnotes on each report.</p></li>
+            <li data-status="planned"><strong>Custom reports</strong><span class="status">Planned</span><p>Build your own reports.</p></li>
+          </ul>
+        </div>
+        <div class="roadmap__module">
+          <h3>Payroll</h3>
+          <ul>
+            <li data-status="busy"><strong>Pay runs</strong><span class="status status--busy">In progress</span><p>Monthly and weekly pay runs. Planned for Q1 2027.</p></li>
+            <li data-status="busy"><strong>Payslips</strong><span class="status status--busy">In progress</span><p>Send a payslip to each employee.</p></li>
+            <li data-status="planned"><strong>Tax forms</strong><span class="status">Planned</span><p>Make the tax forms for each year.</p></li>
+          </ul>
+        </div>
+        <div class="roadmap__module">
+          <h3>Access</h3>
+          <ul>
+            <li data-status="planned"><strong>Mobile app</strong><span class="status">Planned</span><p>Approve bills and see figures from a phone.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs__panel" id="integrations" role="tabpanel" aria-labelledby="tab-integrations">
+      <h2 class="visually-hidden">Integrations</h2>
+      <div class="grid">
+        <div class="card"><span class="card__label">Banking</span><h3>Bank feeds</h3><p>Import statements and match payments to invoices.</p></div>
+        <div class="card"><span class="card__label">Payments</span><h3>Card and EFT</h3><p>Customers pay an invoice from a link.</p></div>
+        <div class="card"><span class="card__label">E-mail</span><h3>Mail providers</h3><p>Send invoices and statements from your own address.</p></div>
+        <div class="card"><span class="card__label">Developers</span><h3>Open API</h3><p>A REST API and webhooks for your own tools.</p></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<nav class="pager" aria-label="Page sequence">
+  <a class="pager__link pager__link--prev" href="/" rel="prev"><span class="pager__arrow" aria-hidden="true">&larr;</span><span class="pager__name">About</span></a>
+  <a class="pager__link pager__link--next" href="/services" rel="next"><span class="pager__name">Services</span><span class="pager__arrow" aria-hidden="true">&rarr;</span></a>
+</nav>
+
+<footer class="footer">
+  <span>© 2026 Meridian</span>
+  <nav class="footer__links" aria-label="Footer">
+    <a href="/about">History</a><a href="/pricing">Pricing</a><a href="/contact">Contact</a>
+  </nav>
+</footer>
+</body>
+</html>

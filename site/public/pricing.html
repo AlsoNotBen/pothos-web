@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing — Meridian</title>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/pricing.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="ribbon">
+  <a class="brand" href="/"><span class="brand__mark">M</span><span class="brand__text">Meridian</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="/">About</a>
+    <a href="/platform">Platform</a>
+    <a href="/services">Services</a>
+    <a href="/pricing" aria-current="page">Pricing</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <header class="page-head">
+      <span class="eyebrow">Pricing</span>
+      <h1>Simple prices. No surprises.</h1>
+      <p class="lead">Select the services that you need. The price updates as you select. All prices exclude tax.</p>
+    </header>
+
+    <section class="section">
+      <div class="calc">
+        <!-- pricing.js adds data-price of each switch that is on.
+             data-per: "month" or "once". -->
+        <ul class="toggles">
+          <li><label class="toggle">
+            <span class="toggle__text"><strong>Data migration</strong><span>We move your accounts, customers and stock from your old system.</span></span>
+            <span class="toggle__price">$1,500 once</span>
+            <input type="checkbox" role="switch" data-price="1500" data-per="once">
+          </label></li>
+          <li><label class="toggle">
+            <span class="toggle__text"><strong>Setup and configuration</strong><span>Chart of accounts, tax rates, users and roles.</span></span>
+            <span class="toggle__price">$800 once</span>
+            <input type="checkbox" role="switch" data-price="800" data-per="once">
+          </label></li>
+          <li><label class="toggle">
+            <span class="toggle__text"><strong>Training</strong><span>Short, practical sessions for each team.</span></span>
+            <span class="toggle__price">$400 once</span>
+            <input type="checkbox" role="switch" data-price="400" data-per="once">
+          </label></li>
+          <li><label class="toggle">
+            <span class="toggle__text"><strong>Custom integrations</strong><span>We connect the platform to the tools that you already use.</span></span>
+            <span class="toggle__price">$2,000 once</span>
+            <input type="checkbox" role="switch" data-price="2000" data-per="once">
+          </label></li>
+          <li><label class="toggle">
+            <span class="toggle__text"><strong>Support</strong><span>E-mail and phone support.</span></span>
+            <span class="toggle__price">$99 / month</span>
+            <input type="checkbox" role="switch" data-price="99" data-per="month">
+          </label></li>
+          <li><label class="toggle">
+            <span class="toggle__text"><strong>Advisory</strong><span>Month-end reviews and process advice.</span></span>
+            <span class="toggle__price">$250 / month</span>
+            <input type="checkbox" role="switch" data-price="250" data-per="month">
+          </label></li>
+        </ul>
+        <div class="card plan plan--featured total" aria-live="polite">
+          <span class="card__label">Monthly</span>
+          <div class="plan__price"><span id="total-month">$0</span> <small>/ month</small></div>
+          <span class="card__label">Once-off</span>
+          <div class="plan__price"><span id="total-once">$0</span></div>
+          <a class="btn btn--primary" href="/contact">Get this quote</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<nav class="pager" aria-label="Page sequence">
+  <a class="pager__link pager__link--prev" href="/services" rel="prev"><span class="pager__arrow" aria-hidden="true">&larr;</span><span class="pager__name">Services</span></a>
+  <a class="pager__link pager__link--next" href="/contact" rel="next"><span class="pager__name">Contact</span><span class="pager__arrow" aria-hidden="true">&rarr;</span></a>
+</nav>
+
+<footer class="footer">
+  <span>© 2026 Meridian</span>
+  <nav class="footer__links" aria-label="Footer">
+    <a href="/about">History</a><a href="/pricing">Pricing</a><a href="/contact">Contact</a>
+  </nav>
+</footer>
+</body>
+</html>
